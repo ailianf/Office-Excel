@@ -1,0 +1,10 @@
+cell函数
+	=OFFSET(A2:F6,CELL("ROW")-2,)
+数据有效性
+	=VLOOKUP(A9,A3:E6,MATCH($D$8,$A$2:$E$2,0),TRUE)
+窗体控件
+	=OFFSET(A2,0,$A$12)
+定义名称
+	=OFFSET(after!$A$2,0,0,COUNTA(after!$A:$A)-1,1)
+	=SERIES(after!$B$1,after!     $A$2:$A$9   ,after!    $B$2:$B$9    ,1)
+	=SERIES(after!$B$1,定义名称.xlsx!日期,定义名称.xlsx!销售额,1)
